@@ -79,28 +79,28 @@ test-cases:
 bugreports:
   - summary: |
     Проверка поиска при вводе несуществующего товара
-  environment: |
+   environment: |
     mac os monterey 12.1
     google chrome Версия 116.0.5845.96 (Официальная сборка), (x86_64)
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Открывает главную страницу сайта
     2. Вводим несуществующее название gjdfh
-  expected-result: |
+   expected-result: |
     Пустой список, сообщение об ошибке
-  actual-result: |
+   actual-result: |
     Список на странице товаров не изменился (bug1regress.png)
     
   - summary: |
     Переход по хэштегу
-  environment: |
+   environment: |
     mac os monterey 12.1
     google chrome Версия 116.0.5845.96 (Официальная сборка), (x86_64)
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Открывает главную страницу сайта
     2. Переходим на вторую страницу товаров
     3. Выбираем товар Mornadi Velvet Bed
     4. Переходим по хэштегу #furniture
-  expected-result: |
+   expected-result: |
     Открывается список товаров с категорией, указанной в хэштеге
-  actual-result: |
+   actual-result: |
     Открывается главная страница сайта, в категории указано furniture, но отображается первая страница товаров (bug2regress.png)
