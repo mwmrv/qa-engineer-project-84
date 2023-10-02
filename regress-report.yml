@@ -1,83 +1,83 @@
 ---
 test-cases:
-    - summary: |
+  - summary: |
         Пользователь должен иметь возможность искать товары по ключевому слову 
       status: pass
   
-    - summary: |
+  - summary: |
         Проверка поиска при вводе несуществующего товара
       status: fail
   
-    - summary: |
+  - summary: |
         Пользователь должен иметь возможность искать товары по категории
       status: pass
 
-    - summary: |
+  - summary: |
         Пользователь должен иметь возможность фильтровать товары по бренду
       status: pass
 
-    - summary: |
+  - summary: |
         Пользователь должен иметь возможность просматривать товар и подробную информацию о нем
       status: pass
     
-    - summary: |
+  - summary: |
         Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины
       status: pass
     
-    - summary: |
+  - summary: |
         Работа фильтра по цене
       status: pass
     
-    - summary: |
+  - summary: |
         Работа галочки 'В наличии'
       status: pass
     
-    - summary: |
+  - summary: |
         Добавление товаров в корзину с главной страницы сайта
       status: pass
     
-    - summary: |
+  - summary: |
         Добавление товаров в корзину из карточки товара
       status: pass
       
-    - summary: |
+  - summary: |
         Навигация по страницам каталога
       status: pass
     
-    - summary: |
+  - summary: |
         Удаление товаров из корзины
       status: pass
       
-    - summary: |
+  - summary: |
         Удаление одного товара из корзины
       status: pass
     
-    - summary: |
+  - summary: |
         Продолжить покупки из корзины
       status: pass
     
-    - summary: |
+  - summary: |
         Оформление покупки из корзины
       status: pass
     
-    - summary: |
+  - summary: |
         Выход из окна заказа через клавишу 'close'
       status: pass
     
-    - summary: |
+  - summary: |
         Выход из окна заказа через 'крестик'
       status: fail
     
-    - summary: |
+  - summary: |
         Изменение языка
       status: fail
         
-    - summary: |
+  - summary: |
         Переход по хэштегу
       status: fail
 
-bugreports: 
-    - summary: |
+bugreports:
+  - summary: |
           Проверка поиска при вводе несуществующего товара
     environment: |
           mac os monterey 12.1
@@ -90,7 +90,7 @@ bugreports:
     actual-result: |
           Список на странице товаров не изменился (bug1regress.png)
     
-    - summary: |
+  - summary: |
           Переход по хэштегу
     environment: |
           mac os monterey 12.1
